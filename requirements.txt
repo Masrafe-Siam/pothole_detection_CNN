@@ -12,3 +12,4 @@ numpy
 keras
 torch
 pandas
+scikit-learn
