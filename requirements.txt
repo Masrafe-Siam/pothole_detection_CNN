@@ -22,5 +22,4 @@ django-cors-headers
 requests
 mysqlclient
 pillow
-# djangorestframework-simplejwt
-# djangorestframework-simplejwt[blacklist]
+python-decouple
