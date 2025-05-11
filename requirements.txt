@@ -14,3 +14,13 @@ torch
 pandas
 scikit-learn
 opencv-python
+
+
+django
+djangorestframework
+django-cors-headers
+requests
+mysqlclient
+pillow
+# djangorestframework-simplejwt
+# djangorestframework-simplejwt[blacklist]
