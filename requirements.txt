@@ -14,4 +14,16 @@ torch
 pandas
 scikit-learn
 opencv-python
+<<<<<<< HEAD
 ultralytics
+=======
+
+
+django
+djangorestframework
+django-cors-headers
+requests
+mysqlclient
+pillow
+python-decouple
+>>>>>>> ac99aeee621488c1da77fe0691664b3f51c7b56e
