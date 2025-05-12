@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 
 # Define paths
-DATASET_ROOT = Path('Dataset')
+DATASET_ROOT = Path('DatasetV12')
 SOURCE_DIRS = {
     'Crack': 0,
     'Pothole': 1,

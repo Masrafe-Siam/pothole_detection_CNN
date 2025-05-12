@@ -14,3 +14,4 @@ torch
 pandas
 scikit-learn
 opencv-python
+ultralytics
