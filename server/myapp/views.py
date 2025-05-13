@@ -7,11 +7,16 @@ from rest_framework.parsers import MultiPartParser
 from PIL import Image
 import io
 import cv2
+from decouple import load_dotenv
+import os
+
 
 IMAGE_SIZE = 224
 CLASS_NAMES = ['Crack', 'Pothole', 'Surface Erosion']
 
-MODEL_PATH = config("MODEL_PATH") 
+load_dotenv()
+
+MODEL_PATH = os.getenv("MODEL_PATH")
 model = tf.keras.models.load_model(MODEL_PATH)
 
 def get_lighting_condition(img_array):
