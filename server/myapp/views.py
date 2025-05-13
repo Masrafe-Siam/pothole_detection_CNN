@@ -1,4 +1,3 @@
-# api/views.py
 import numpy as np
 import tensorflow as tf
 from rest_framework.views import APIView
@@ -7,16 +6,14 @@ from rest_framework.parsers import MultiPartParser
 from PIL import Image
 import io
 import cv2
-from decouple import load_dotenv
+from decouple import config  
 import os
 
 
 IMAGE_SIZE = 224
 CLASS_NAMES = ['Crack', 'Pothole', 'Surface Erosion']
 
-load_dotenv()
-
-MODEL_PATH = os.getenv("MODEL_PATH")
+MODEL_PATH = config("MODEL_PATH")
 model = tf.keras.models.load_model(MODEL_PATH)
 
 def get_lighting_condition(img_array):
@@ -64,7 +61,7 @@ class PredictView(APIView):
                 'prediction': predicted_class,
                 'confidence': confidence,
                 'lighting': lighting,
-                'brightness': brightness
+                #'brightness': brightness
             })
         except Exception as e:
             return Response({'error': str(e)}, status=500)

@@ -2,3 +2,8 @@ venv/
 .env
 runs/
 Model/Trained Modelv2/
+venv310/
+server/myapp/generative.py
+uploads/
+Model/Testmodel.ipynb
+
