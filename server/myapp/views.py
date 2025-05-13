@@ -11,10 +11,8 @@ import cv2
 IMAGE_SIZE = 224
 CLASS_NAMES = ['Crack', 'Pothole', 'Surface Erosion']
 
-# # Load model once on server start
-model = tf.keras.models.load_model("E:/python/ML/pothole_detection_CNN/Model/Trained Modelv2/MOBILENET.keras")
-# MODEL_PATH = config("MODEL_PATH")  # Will load from .env
-# model = tf.keras.models.load_model(MODEL_PATH)
+MODEL_PATH = config("MODEL_PATH") 
+model = tf.keras.models.load_model(MODEL_PATH)
 
 def get_lighting_condition(img_array):
     grayscale_img = tf.image.rgb_to_grayscale(img_array)
@@ -83,8 +81,6 @@ class PredictView(APIView):
 # CLASS_NAMES = ['Crack', 'Pothole', 'Surface Erosion']
 
 # # Load model once at startup
-# MODEL_PATH = "E:/python/ML/pothole_detection_CNN/Model/Trained Modelv2/CNN.h5"
-# model = tf.keras.models.load_model(MODEL_PATH)
 
 # # Auto preprocessing based on model filename
 # def auto_preprocess(img_array, model_path):

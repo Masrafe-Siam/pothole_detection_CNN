@@ -1,4 +1,4 @@
-# tensorflow>=2.10.0
+#tensorflow>=2.10.0
 # matplotlib>=3.5.0
 # ipython>=7.31.0
 # numpy>=1.21.0
@@ -14,10 +14,7 @@ torch
 pandas
 scikit-learn
 opencv-python
-<<<<<<< HEAD
 ultralytics
-=======
-
 
 django
 djangorestframework
@@ -26,4 +23,3 @@ requests
 mysqlclient
 pillow
 python-decouple
->>>>>>> ac99aeee621488c1da77fe0691664b3f51c7b56e
