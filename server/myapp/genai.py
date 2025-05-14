@@ -36,7 +36,7 @@ class Detect(APIView):
             prompt, report = generate_road_damage_report(full_path)
             with open(full_path, 'rb') as f:
                 predict_response = requests.post(
-                    'http://127.0.0.1:8000/api/predict/',
+                    'http://127.0.0.1:8000/api/predict-classification/',
                     files={'image': f}
                 )
 
